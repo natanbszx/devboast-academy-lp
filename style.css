@@ -53,7 +53,7 @@ li a {
   display: flex;
   background: linear-gradient(90deg, #71adb5, #0d3446);
   color: white;
-  align-content: space-between;
+  gap: 55rem;
   align-items: center;
   padding: 3rem 3rem;
   line-height: 4.8rem;
@@ -96,8 +96,9 @@ li a {
   row-gap: 5.5rem;
   background: linear-gradient(90deg, #004f5a, #008a9d);
   z-index: 1rem;
-  overflow: hidden; /* Se o ícone for muito grande, corta as pontas em vez de criar barra de rolagem na página */
+  /* Se o ícone for muito grande, corta as pontas em vez de criar barra de rolagem na página */
   line-height: 1.7rem;
+  z-index: 10;
 }
 
 .container-titulo {
@@ -125,8 +126,8 @@ li a {
 .sessao-beneficios ul {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
-  padding: 0rem 1.5rem;
+  gap: 8rem;
+  padding: 0rem 8rem;
 }
 
 .sessao-beneficios ul li {
@@ -181,13 +182,15 @@ li a {
   flex-direction: row;
   row-gap: 5.5rem;
   background: linear-gradient(90deg, #004f5a, #008a9d);
+  z-index: -1;
 }
 
 .sessao-projetos ul {
   display: flex;
   flex-direction: row;
-  gap: 3rem;
-  padding: 0rem 1.5rem;
+  gap: 8rem;
+  padding: 0rem 8rem;
+  align-items: center;
 }
 
 .sessao-projetos ul li {

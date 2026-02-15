@@ -86,6 +86,7 @@ li a {
 
 .sessao-beneficios p {
   font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 
 .sessao-beneficios {
@@ -94,7 +95,9 @@ li a {
   flex-direction: row;
   row-gap: 5.5rem;
   background: linear-gradient(90deg, #004f5a, #008a9d);
-  z-index: 9rem;
+  z-index: 1rem;
+  overflow: hidden; /* Se o ícone for muito grande, corta as pontas em vez de criar barra de rolagem na página */
+  line-height: 1.7rem;
 }
 
 .container-titulo {
@@ -130,14 +133,16 @@ li a {
   position: relative;
   display: inline-block;
   background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px); /*adiciona efeito de borrado */
   border-radius: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .sessao-beneficios h3,
 .sessao-beneficios p {
   padding: 1rem 1rem;
   border-radius: top;
+  color: white;
 }
 
 .clique-bf1 {
@@ -152,4 +157,13 @@ li a {
   right: -2rem;
   top: -2rem;
   width: 5rem;
+}
+
+.icone-de-fundo-beneficio {
+  position: absolute;
+  width: 20rem;
+  top: -17rem;
+  right: -7rem;
+  z-index: -1;
+  transform: rotate(-14deg);
 }

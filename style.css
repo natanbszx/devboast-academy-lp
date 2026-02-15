@@ -136,13 +136,9 @@ li a {
   backdrop-filter: blur(10px); /*adiciona efeito de borrado */
   border-radius: 1.6rem;
   border: 1px solid rgba(255, 255, 255, 0.2);
-}
-
-.sessao-beneficios h3,
-.sessao-beneficios p {
   padding: 1rem 1rem;
-  border-radius: top;
   color: white;
+  line-height: 1.8rem;
 }
 
 .clique-bf1 {
@@ -166,4 +162,58 @@ li a {
   right: -7rem;
   z-index: -1;
   transform: rotate(-14deg);
+}
+
+/* sessao projetos */
+
+.sessao-projetos h3 {
+  font-size: 1.5rem;
+}
+
+.sessao-projetos p {
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+}
+
+.sessao-projetos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 5.5rem;
+  background: linear-gradient(90deg, #004f5a, #008a9d);
+}
+
+.sessao-projetos ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 0rem 1.5rem;
+}
+
+.sessao-projetos ul li {
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px); /*adiciona efeito de borrado */
+  border-radius: 1.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 1rem 1rem;
+  line-height: 1.8rem;
+}
+
+.h2-sessao-projetos {
+  margin: auto;
+  margin-top: 3rem;
+  color: white;
+  background: linear-gradient(90deg, #a310b1, #ff00a6);
+  padding: 1rem 3rem;
+  border-radius: 20rem;
+}
+
+.raio-do-projeto1 {
+  position: absolute;
+  width: 10rem;
+  top: 15rem;
+  left: 19rem;
 }

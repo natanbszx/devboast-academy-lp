@@ -74,6 +74,82 @@ li a {
   border-radius: 20rem;
   padding: 0.5rem 3rem;
   line-height: 1.4rem;
-  box-shadow: 0rem 1.3rem 8rem black;
+  box-shadow: 0rem 0.5rem 5rem black;
   border: 1.5rem gray;
+}
+
+/* sessao beneficio */
+
+.sessao-beneficios h3 {
+  font-size: 1.5rem;
+}
+
+.sessao-beneficios p {
+  font-size: 1.3rem;
+}
+
+.sessao-beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  row-gap: 5.5rem;
+  background: linear-gradient(90deg, #004f5a, #008a9d);
+  z-index: 9rem;
+}
+
+.container-titulo {
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  margin-top: 4rem;
+}
+
+.texto-beneficio {
+  display: inline-block;
+  background: linear-gradient(90deg, #ded21e, #e88b08);
+  padding: 1rem 3rem;
+  border-radius: 20rem;
+  color: white;
+}
+
+.coroa-beneficio {
+  position: absolute;
+  top: -30px;
+  left: -2rem;
+  width: 50px;
+}
+
+.sessao-beneficios ul {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  padding: 0rem 1.5rem;
+}
+
+.sessao-beneficios ul li {
+  position: relative;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 1.6rem;
+}
+
+.sessao-beneficios h3,
+.sessao-beneficios p {
+  padding: 1rem 1rem;
+  border-radius: top;
+}
+
+.clique-bf1 {
+  position: absolute;
+  width: 15rem;
+  left: 14rem;
+  top: 15rem;
+}
+
+.foguete-bf2 {
+  position: absolute;
+  right: -2rem;
+  top: -2rem;
+  width: 5rem;
 }

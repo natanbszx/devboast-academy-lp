@@ -13,3 +13,37 @@ body {
 html {
   font-size: 62.5%;
 }
+/* Cabeçalho */
+header {
+  background: linear-gradient(90deg, #0d3446, #2080ac);
+  display: flex;
+  height: 6rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 1rem;
+  box-shadow: 0rem 2rem 15rem;
+}
+
+header img {
+  width: 15rem;
+  margin-left: 2rem;
+}
+
+nav ul {
+  display: flex;
+  column-gap: 1rem;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+
+.botao-inscreva-se {
+  background: linear-gradient(90deg, #0d3446, #2080ac);
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+  box-shadow: 0rem 0.3rem 1.5rem;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}

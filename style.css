@@ -411,3 +411,107 @@ hr {
   width: 100%; /* Garante que o form ocupe o espaço disponível */
   padding-left: 3rem;
 }
+
+/* =========================================
+   RESPONSIVIDADE (MOBILE)
+   Cole isso no FINAL do seu style.css
+   ========================================= */
+
+@media (max-width: 768px) {
+  /* 1. Ajuste Geral: Diminuir fontes para não estourar */
+  html {
+    font-size: 50%; /* Tudo fica um pouco menor */
+  }
+
+  /* 2. Cabeçalho: Empilhar Logo, Menu e Botão */
+  header {
+    flex-direction: column; /* Um embaixo do outro */
+    height: auto; /* Altura automática para caber tudo */
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  nav ul {
+    flex-direction: column; /* Menu vertical */
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  header img {
+    margin: 0; /* Remove margem lateral */
+  }
+
+  /* 3. Sessão Hero: Texto em cima, Imagem embaixo */
+  .sessao-hero {
+    flex-direction: column-reverse; /* Inverte para imagem ficar no topo ou column normal */
+    gap: 4rem;
+    text-align: center; /* Centraliza texto */
+    padding: 4rem 2rem;
+  }
+
+  .sessao-hero img {
+    width: 80%; /* Imagem não ocupa largura fixa */
+    max-width: 30rem;
+  }
+
+  /* 4. Benefícios e Projetos: Cards um embaixo do outro */
+  .sessao-beneficios,
+  .sessao-projetos,
+  .sessao-depoimentos {
+    padding: 4rem 1rem; /* Menos padding lateral */
+  }
+
+  .sessao-beneficios ul,
+  .sessao-projetos ul,
+  .sessao-depoimentos ul {
+    flex-direction: column; /* A MÁGICA: Empilha os cards */
+    gap: 4rem;
+    padding: 0;
+  }
+
+  .sessao-beneficios ul li,
+  .sessao-projetos ul li,
+  .sessao-depoimentos ul li {
+    width: 100%; /* Card ocupa largura total */
+    display: block; /* Garante comportamento de bloco */
+  }
+
+  /* 5. Footer: Tudo empilhado */
+  footer {
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+  }
+
+  .rodape {
+    border-right: none; /* Remove a linha lateral */
+    border-bottom: 1px solid white; /* Põe linha embaixo */
+    padding-right: 0;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+  }
+
+  .NewsLatter form {
+    padding-left: 0; /* Remove padding lateral */
+  }
+
+  /* 6. LIMPEZA DE DECORAÇÃO (Importante!) 
+       Elementos flutuantes (absolute) costumam quebrar o mobile.
+       A solução rápida é esconder os enfeites no celular. */
+  .clique-bf1,
+  .foguete-bf2,
+  .icone-de-fundo-beneficio,
+  .raio-do-projeto1,
+  .coroa-beneficio,
+  .balao-depoimentos,
+  .icone-mouse {
+    display: none; /* Esconde para limpar a tela */
+  }
+
+  /* Ajuste para as setas do depoimento não ficarem em cima do texto */
+  .seta-anterior,
+  .seta-proximo {
+    display: none; /* Em mobile geralmente usamos arrastar, ou posicionamos melhor */
+  }
+}

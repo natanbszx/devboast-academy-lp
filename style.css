@@ -9,6 +9,7 @@ body {
   font-family: Montserrat, sans-serif;
   font-size: 1.6rem;
   color: white;
+  padding-top: 6rem;
 }
 
 html {
@@ -22,7 +23,11 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0rem 1rem;
-  box-shadow: 0rem 2rem 15rem;
+  position: fixed;
+  width: 100%;
+  top: 0%;
+  left: 0%;
+  z-index: 1000;
 }
 
 header img {
@@ -427,13 +432,14 @@ hr {
   header {
     flex-direction: column; /* Um embaixo do outro */
     height: auto; /* Altura automática para caber tudo */
-    padding: 2rem 0;
-    gap: 2rem;
+    padding: 1rem 0;
+    gap: 1rem;
   }
 
   nav ul {
-    flex-direction: column; /* Menu vertical */
-    align-items: center;
+    flex-direction: row; /* Menu vertical */
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 1.5rem;
   }
 
@@ -446,7 +452,7 @@ hr {
     flex-direction: column-reverse; /* Inverte para imagem ficar no topo ou column normal */
     gap: 4rem;
     text-align: center; /* Centraliza texto */
-    padding: 4rem 2rem;
+    padding: 6rem 2rem;
   }
 
   .sessao-hero img {

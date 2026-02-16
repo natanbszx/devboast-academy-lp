@@ -8,6 +8,7 @@
 body {
   font-family: Montserrat, sans-serif;
   font-size: 1.6rem;
+  color: white;
 }
 
 html {
@@ -40,7 +41,7 @@ nav ul {
   background: linear-gradient(90deg, #0d3446, #2080ac);
   padding: 0.2rem 1rem;
   border-radius: 2rem;
-  box-shadow: 0rem 0.3rem 5rem;
+  box-shadow: 0rem 0.3rem 5rem black;
 }
 
 li a {
@@ -301,4 +302,112 @@ li a {
 
 .navegacao-depoimentos div:first-child {
   background-color: black;
+}
+
+footer {
+  background-color: #0d3446;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 8rem;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.rodape {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  row-gap: 0.8rem;
+  height: 18rem;
+  border-right: 0.2rem solid white;
+  padding-right: 4rem;
+}
+
+hr {
+  display: none;
+}
+
+.rodape img {
+  justify-items: center;
+  width: 15rem;
+}
+
+.nav-rodape {
+  padding: 0rem 6rem 1rem 6rem;
+  border-bottom: 0.2rem solid white;
+}
+
+.nav-rodape2 {
+  padding-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.nav-rodape2 li:not(:last-child) {
+  border-right: 0.2rem solid white;
+  padding-right: 1rem;
+}
+
+/* Ajuda de IA */
+
+.NewsLatter {
+  display: flex;
+  flex-direction: column; /* Empilha um embaixo do outro */
+  align-items: center; /* Centraliza horizontalmente */
+  gap: 1.5rem; /* Espaço entre Título, Inputs e Botão */
+}
+
+.inputs-footer input {
+  width: 30rem; /* Largura fixa para ficarem iguais */
+  padding: 1rem 1.5rem; /* Enchimento para o texto não colar na borda */
+  border-radius: 20rem; /* Borda "Pílula" */
+  border: none; /* Remove a borda padrão feia */
+  outline: none; /* Remove o contorno azul ao clicar */
+
+  /* Opcional: Estilo da fonte dentro do input */
+  font-family: Montserrat, sans-serif;
+  font-size: 1.4rem;
+}
+
+.NewsLatter button {
+  padding: 0.8rem 4rem; /* Botão gordinho */
+  border-radius: 20rem; /* Borda redonda */
+  border: none;
+  cursor: pointer; /* Mãozinha ao passar o mouse */
+
+  /* O Gradiente Amarelo (Copiado do seu .texto-beneficio) */
+  background: linear-gradient(90deg, #ded21e, #e88b08);
+  color: white;
+  font-weight: bold;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.4rem;
+  margin-top: 1rem; /* Um espacinho extra antes do botão */
+}
+
+/* Efeito ao passar o mouse (Opcional) */
+.NewsLatter button:hover {
+  transform: scale(1.05); /* Cresce um pouquinho */
+  transition: 0.3s;
+}
+
+/* Adicione isso para controlar o espaço DENTRO do formulário */
+.NewsLatter form {
+  display: flex;
+  flex-direction: column; /* Um embaixo do outro */
+  gap: 1rem; /* <--- ESSE É O COMANDO QUE AUMENTA O ESPAÇO */
+  width: 100%; /* Garante que o form ocupe o espaço disponível */
+  padding-left: 3rem;
 }

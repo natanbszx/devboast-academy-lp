@@ -1,5 +1,5 @@
 # 💻 Devboast Academy - Landing Page
-Olá =), bem-vindo ao repositório do projeto **DevBoast Academy**! Esta é uma Landing Page desenvolvida para uma escola de programação fictícia, combinando acessibilidade visual, hierarquia de informações e codificação.
+Olá, bem-vindo ao repositório do projeto **DevBoast Academy**!, meu primeiro projeto publicado :), Esta é uma Landing Page desenvolvida para uma escola de programação fictícia, combinando acessibilidade visual, hierarquia de informações e codificação.
 
 **Objetivo:** Aplicar os conhecimentos de Figma, Git e Github, HTML e CSS obtidos na plataforma da **Hashtag Treinamentos**!
 
